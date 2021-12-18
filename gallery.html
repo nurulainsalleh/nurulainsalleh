@@ -1,0 +1,395 @@
+<html>
+<head><title>Gallery</title></head>
+
+
+<link rel="icon" type="image/icon5.png" href="image/icon5.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #F02525;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<tr>
+<td><a href="index.html">Home</a></td>
+<td><a href="biodata.html">Biodata</a></td>
+<td><a href="experience.html">Experience</a></td>
+<td><a href="education.html">Education</a></td>
+<td><a href="family.html">Family</a></td>
+<td><a href="gallery.html">Gallery</a></td>
+</tr>
+</div>
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>GALLERY</h1>
+<hr>
+
+<h2>Online Lookbook</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('photography')"> Photography</button>
+  <button class="btn" onclick="filterSelection('logo')"> Logo</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+  <button class="btn" onclick="filterSelection('travel')"> Travel</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column photography">
+    <div class="content">
+      <img src="image/ainmiker2.jpg" alt="Mountains" style="width:100%">
+      <h4>Miker Pizza</h4>
+      <p>Waiting for food</p>
+    </div>
+  </div>
+  <div class="column photography">
+    <div class="content">
+    <img src="image/ainmiker3.jpg" alt="Lights" style="width:100%">
+      <h4>Building</h4>
+      <p>Outside Miker Pizza</p>
+    </div>
+  </div>
+  <div class="column photography">
+    <div class="content">
+    <img src="image/ainmiker.jpg" alt="Nature" style="width:100%">
+      <h4>Konda Kondi</h4>
+      <p>Me in cafe</p>
+    </div>
+  </div>
+  
+  <div class="column logo">
+    <div class="content">
+      <img src="image/sktdlogo.jpg" alt="Car" style="width:100%">
+      <h4>SKTD</h4>
+      <p>SK Tasek Damai</p>
+    </div>
+  </div>
+  <div class="column logo">
+    <div class="content">
+    <img src="image/smktdlogo.png" alt="Car" style="width:100%">
+      <h4>SMKTD</h4>
+      <p>SMK Tasek Damai</p>
+    </div>
+  </div>
+  <div class="column logo">
+    <div class="content">
+    <img src="image/uitmlogo.jpg" alt="Car" style="width:100%">
+      <h4>UITM</h4>
+      <p>Cawangan Kedah</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="image/abah1.jpg" alt="Car" style="width:100%">
+      <h4>Father</h4>
+      <p>Mohamad Salleh</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="image/mama.jpg" alt="Car" style="width:100%">
+      <h4>Mother</h4>
+      <p>Zarina Adnan</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="image/abang.jpg" alt="Car" style="width:100%">
+      <h4>Eldest Brother</h4>
+      <p>Mohamad Hilmi</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="image/kakak.jpg" alt="Car" style="width:100%">
+      <h4>Sister</h4>
+      <p>Nurafiqah</p>
+     </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="image/akim.jpg" alt="Car" style="width:100%">
+      <h4>Younger Brother</h4>
+      <p>Mohamad Hakim</p>
+     </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="image/baby.jpg" alt="Car" style="width:100%">
+      <h4>Younger Sister</h4>
+      <p>Nur Athirah</p>
+   </div>
+  </div>
+
+  <div class="column travel">
+    <div class="content">
+    <img src="image/lostworld13.jpg" alt="Car" style="width:100%">
+      <h4>Map</h4>
+      <p>Lostworld Map</p>
+     </div>
+  </div>
+  <div class="column travel">
+    <div class="content">
+    <img src="image/lostworld12.jpg" alt="Car" style="width:100%">
+      <h4>Elephant</h4>
+      <p>Five of us</p>  
+   </div>
+  </div>
+  <div class="column travel">
+    <div class="content">
+    <img src="image/lostworld14.jpg" alt="Car" style="width:100%">
+      <h4>Infront aquarium</h4>
+      <p>Five of us</p>
+     </div>
+  </div>
+  <div class="column travel">
+    <div class="content">
+    <img src="image/lostworld15.jpg" alt="Car" style="width:100%">
+      <h4>Lostworld Slide</h4>
+      <p>Me & Bella</p>
+   </div>
+  </div>
+  <div class="column travel">
+    <div class="content">
+    <img src="image/lostworld17.jpg" alt="Car" style="width:100%">
+      <h4>Lostworld Slide</h4>
+      <p>Me & Syahirah</p>
+     </div>
+  </div>
+  <div class="column travel">
+    <div class="content">
+    <img src="image/lostworld16.jpg" alt="Car" style="width:100%">
+      <h4>Lostworld Slide</h4>
+      <p>Me & Syahirah</p>
+     </div>
+  </div>
+  <div class="column travel">
+    <div class="content">
+    <img src="image/lostworld18.jpg" alt="Car" style="width:100%">
+      <h4>Lostworld Slide</h4>
+      <p>Me & Syahirah</p>
+     </div>
+  </div>
+
+
+
+
+
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+<br>
+<embed src="songs/Daydreamin'.mp3" hidden="true" autostart="true"></embed>
+
+
+<title>footer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+
+}
+
+/* Style the footer */
+.footer {
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+
+<div class="footer">
+  <h2>Contact me</h2>
+
+  <h4> Info    ∘ Lifestyle</h4>
+  <h4> Terms of Use ∘ Privacy Policy</h4>
+  
+  <center><a href="https://www.facebook.com/profile.php?id=100033189859576" target="_blank">Facebook</a>
+  
+<br>
+<br>
+<footer>
+Copyright &copy; Nurul Ain's Webiste 2021-2022
+</footer>
+
+<style>
+a {
+  color: green;
+}
+
+
+
+<body>
+<body bgcolor="brown">
+</body>
